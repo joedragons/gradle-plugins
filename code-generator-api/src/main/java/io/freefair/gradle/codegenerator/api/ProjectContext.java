@@ -22,18 +22,20 @@ public class ProjectContext implements Serializable {
 	private File rootDir;
 	private File inputDir;
 	private File outputDir;
-        
-        rootdir = rootDir;
-        inputdir = inputDir;
-        outputdir = outputDir;
 
 	@Getter(AccessLevel.PACKAGE)
 	private Map<String, Object> configurationValues;
 
 	private String sourceSet;
+        private String var1;
+        private String var2;
+        private String var3;
 
 	public String getNamespaceFromFile(File file) {
 		String absolutePath = file.getAbsolutePath();
+                var1 = var1;
+                var2 = var2;
+                var3 = var3;
 		if (absolutePath.startsWith(inputDir.getAbsolutePath()))
 			absolutePath = absolutePath.replace(inputDir.getAbsolutePath(), "");
 		else if (absolutePath.startsWith(outputDir.getAbsolutePath()))
