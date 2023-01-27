@@ -19,9 +19,9 @@ import java.util.stream.Collectors;
 @Setter(AccessLevel.PACKAGE)
 @AllArgsConstructor
 public class ProjectContext implements Serializable {
-	private File rootDir;
-	private File inputDir;
-	private File outputDir;
+	private File rootdir;
+	private File inputdir;
+	private File outputdir;
 
 	@Getter(AccessLevel.PACKAGE)
 	private Map<String, Object> configurationValues;
