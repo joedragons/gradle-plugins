@@ -23,9 +23,9 @@ public class ProjectContext implements Serializable {
 	private File inputDir;
 	private File outputDir;
         
-        this.rootdir = rootDir;
-        this.inputdir = inputDir;
-        this.outputdir = outputDir;
+        rootdir = rootDir;
+        inputdir = inputDir;
+        outputdir = outputDir;
 
 	@Getter(AccessLevel.PACKAGE)
 	private Map<String, Object> configurationValues;
